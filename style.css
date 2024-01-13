@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.portfolio-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.navbar{
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+}
+.left-container, .right-container{
+    height: 100vh;
+    display: flex;
+}
+.left-container{
+    background-color: #262525;
+    width: 70%;
+    padding: 3rem;
+    align-items: center;
+    
+}
+.right-container{
+    background: linear-gradient(#262525,#3877f3);
+    width: 30%;
+}
+.content{
+    margin-left: 4rem ;
+}
+.content h1{
+    font-size: 4rem;
+    color: #5DB9EE;
+}
+.content .intro{
+    color: #fff;
+}
+.content .intro span{
+    color: #5DB9EE;
+}
+.content .detail{
+    color: #fff;
+    font-size: 1rem;
+    max-width: 35rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+.btn-container button{
+    border: .1rem solid #5DB9EE;
+    font-size: 1.1 rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .3s ease;
+}
+button:nth-child(1){
+      background: #5DB9EE;
+}
+button:nth-child(2){
+    background: transparent;
+    color: #5DB9EE;
+    margin-left: 2rem;
+}
+button:nth-child(1):hover{
+    background: transparent;
+    color: #5DB9EE;
+}
+button:nth-child(2):hover{
+    background: #5DB9EE;
+    color: #262525;
+}
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+.circle:nth-child(1){
+    background: linear-gradient(90deg, transparent 50%,#262525 50%);
+    width: 32rem;
+}
+.circle:nth-child(2){
+    width: 24rem;
+    background-image:url("tea2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 
+    0 0 2rem #fff,
+    inset 0 0 1rem #fff,
+    0 0 2rem #3877f3,
+    inset 0 0 2rem #3877f3
+    ;
+}
